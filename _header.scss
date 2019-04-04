@@ -1,0 +1,77 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    &_nav{
+        justify-content: space-between;
+    }
+    &_logo{
+        font-size: $px-40;
+        color: $color-white !important;
+    }
+    &_button{
+        background-color: $color-1;
+    }
+    &_collapse{
+        text-align: right;
+        flex-grow: unset !important;
+    }
+    &_ul{
+        .active::after{
+            width: 100% ;
+            
+        }
+        .active{
+            a{
+                color: $color-1 !important;
+            }
+        }
+    }
+    &_li{
+        border-bottom: 1px solid gray; 
+        &:hover .header_a{
+            color: $color-1 !important;
+        }
+        &::after{
+            content: "";
+            width: 0 ;
+            height: 3px;
+            display: block;
+            background-color: $color-1;
+            transition: 0.5s;
+        }
+        &:hover::after{
+            width: 100% ;
+        }
+        padding: 0 40px;
+    }
+    &_a{
+        color: $color-white !important;
+        font-size: $px-20;
+    }
+}
+@media screen and (max-width:992px){
+    .header{
+        &_ul{
+         position: static;
+         text-align: center;
+         z-index: 999;
+         color: white;
+         background: rgba(0,0,0,.9);
+         margin: $px-50 0 ;
+         padding: $px-50 0;
+         font-size: $px-30;
+         
+        }
+        &_li{
+            border-bottom: unset;
+            padding: 0;
+
+        }
+     }
+}
+    

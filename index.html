@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- font-roboto -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- end font-roboto -->
+    <!-- cài swiper -->
+    <link rel="stylesheet" href="./swiper-4.5.0/dist/css/swiper.min.css">
+    <!-- end cái swiper -->
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- ----------------------------HEADER---------------------------- -->
+    <header class="container-fluid header">
+        <nav class="navbar navbar-expand-lg navbar-light header_nav">
+            <a class="navbar-brand header_logo" href="#">Cinema</a>
+            <button class="navbar-toggler header_button" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse header_collapse" id="navbarNav">
+                <ul class="navbar-nav header_ul">
+                    <li class="nav-item active header_li">
+                        <a class="nav-link header_a" href="#">Trang Chủ <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item header_li">
+                        <a class="nav-link header_a" href="#">Cụm Rạp</a>
+                    </li>
+                    <li class="nav-item header_li">
+                        <a class="nav-link header_a" href="#">Tin Tức</a>
+                    </li>
+                    <li class="nav-item header_li">
+                        <!-- <a class="nav-link header_a" href="#">Đăng Nhập</a> -->
+                        <button type="button" class="btn btn-lg text-white" data-toggle="modal"
+                            data-target="#auth_modal">Đăng Nhập</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- ----------------------------END HEADER---------------------------- -->
+    <!-- ----------------------------Carousel------------------------------ -->
+    <section id="carousel" class="">
+        <div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators " data-slide-to="0" class="active pagi-edit"></li>
+                    <li data-target="#carouselExampleIndicators " data-slide-to="1" class="pagi-edit"> </li>
+                    <li data-target="#carouselExampleIndicators " data-slide-to="2" class="pagi-edit"></li>
+                </ol>
+                <div class="carousel-inner carousel-inner__edit">
+                    <div class="carousel-item carousel-inner__item active">
+                        <div class="carousel-inner__item-img-1">
+
+                        </div>
+                        <div class="carousel-caption carousel-inner_caption">
+                            <h1>The Unknown Soldier</h1>
+                            <p>The Unknown Soldier dựa trên cuốn tiểu thuyết cổ điển bán chạy nhất năm 1954 cùng tên của
+                                Väinö Linna</p>
+                            <a href="#" class="carousel-video-trailer">
+                                <img src="./img/play-video.png" alt="lỗi">
+                                <span>Xem Trailer</span>
+                            </a>
+
+                        </div>
+                        <div class="carousel-item__overlay"></div>
+                    </div>
+                    <div class="carousel-item carousel-inner__item ">
+                        <div class="carousel-inner__item-img-2">
+
+                        </div>
+                        <div class="carousel-caption carousel-inner_caption">
+                            <h1>The Unknown Soldier</h1>
+                            <p>The Unknown Soldier dựa trên cuốn tiểu thuyết cổ điển bán chạy nhất năm 1954 cùng tên của
+                                Väinö Linna</p>
+                            <a href="#" class="carousel-video-trailer">
+                                <img src="./img/play-video.png" alt="lỗi">
+                                <span>Xem Trailer</span>
+                            </a>
+                        </div>
+                        <div class="carousel-item__overlay"></div>
+                    </div>
+                    <div class="carousel-item  carousel-inner__item ">
+                        <div class="carousel-inner__item-img-3">
+
+                        </div>
+                        <div class="carousel-caption carousel-inner_caption">
+                            <h1>The Unknown Soldier</h1>
+                            <p>The Unknown Soldier dựa trên cuốn tiểu thuyết cổ điển bán chạy nhất năm 1954 cùng tên của
+                                Väinö Linna</p>
+                            <a href="#" class="carousel-video-trailer">
+                                <img src="./img/play-video.png" alt="lỗi">
+                                <span>Xem Trailer</span>
+                            </a>
+                        </div>
+                        <div class="carousel-item__overlay"></div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- ----------------------------End Carousel------------------------------ -->
+    <!-- ----------------------------Now Playing ------------------------------- -->
+    <!-- Phần này dùng thư viện swiper , cài về -->
+    <section class="now-playing">
+        <div class="now-playing_config">
+            <h1>Đang Chiếu</h1>
+        </div>
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./img/venom.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/artemis-fowl.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/artemis-fowl.jpg" alt="">
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <!-- end swiper -->
+    </section>
+    <!-- ----------------------------End Now Playing---------------------------- -->
+    
+
+
+
+    <!-- ----------------------------- Modal đăng ký ,đăng nhập(auth)--------------------------------->
+    <!-- Modal -->
+    <div id="auth_modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#dangnhap" role="tab"
+                                    aria-controls="home" aria-selected="true">Đăng Nhập</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#dangky" role="tab"
+                                    aria-controls="profile" aria-selected="false">Đăng Ký</a>
+                            </li>
+
+                        </ul>
+                    </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="dangnhap" role="tabpanel" aria-labelledby="home-tab">
+                            <!--form đăng nhập -->
+                            <form>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" placeholder="Enter email">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                                        anyone else.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1"
+                                        placeholder="Password">
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                            <!-- end form đăng nhập -->
+                        </div>
+                        <div class="tab-pane fade" id="dangky" role="tabpanel" aria-labelledby="profile-tab">
+                            <!-- form đăng ký -->
+                            <!--form đăng nhập -->
+                            <form>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail2"
+                                        aria-describedby="emailHelp" placeholder="Enter email">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                                        anyone else.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword2"
+                                        placeholder="Password">
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                            <!-- end form đăng nhập -->
+                            <!-- end form đăng ký -->
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!---------------------------------End Modal đăng ký ,đăng nhập---------------------------->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- cài swiper -->
+    <script src="swiper-4.5.0/dist/js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            // slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+    <!-- end cài swiper -->
+
+</body>
+
+</html>
